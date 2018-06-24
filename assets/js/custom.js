@@ -7,7 +7,7 @@ $(document).ready(function($) {
     $("#form-contact-submit").bind("click", function(event){
         $("#form-contact").validate({
             submitHandler: function() {
-                $.post("assets/php/contact.php", $("#form-contact").serialize(),  function(response) {
+                $.post("https://script.google.com/macros/s/AKfycbyv-6xx6WwelMRE7yhS8anDiDwzJ1BRHnhleEueXJuLOXLTbk7_/exec", $("#form-contact").serialize(),  function(response) {
                     $('#form-status').html(response);
                     $('#form-contact-submit').attr('disabled','true');
                 });
@@ -25,7 +25,7 @@ $(document).ready(function($) {
                 }
             },
             submitHandler: function() {
-                $.post("assets/php/subscribe.php", $("#form-slider").serialize(),  function(response) {
+                $.post("https://script.google.com/macros/s/AKfycbyv-6xx6WwelMRE7yhS8anDiDwzJ1BRHnhleEueXJuLOXLTbk7_/exec", $("#form-slider").serialize(),  function(response) {
                     $('#form-slider-status').html(response);
                     $('#form-slider-submit').addClass('disable-submit-button');
                 });
