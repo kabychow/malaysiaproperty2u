@@ -1,14 +1,15 @@
 body {
-    background-color: #00838e;
+    background: #00838e url("../img/bg.jpg") no-repeat;
 }
 
 form {
+    opacity: .95;
     box-sizing: border-box;
     padding: 40px;
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 450px;
     border-radius: 10px;
-    background-color: #005661;
+    background-color: #1e1e1e;
     font-family: Tahoma, Geneva, sans-serif;
 }
 
