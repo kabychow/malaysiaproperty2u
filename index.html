@@ -10,10 +10,12 @@
     <form method="POST" action="https://script.google.com/macros/s/AKfycbyv-6xx6WwelMRE7yhS8anDiDwzJ1BRHnhleEueXJuLOXLTbk7_/exec">
         <img src="img/cover.png" />
         <h1>The best property to invest in 2018</h1>
-        <p>Fill up the form below & we will contact you through whatsapp</p>
-        <input type="text" name="name" placeholder="Name" />
-        <input type="text" name="phone" placeholder="Phone Number" />
-        <input type="submit" value="Submit">
+        <p>We will contact you through whatsapp</p>
+        <input type="text" name="name" placeholder="Full Name" required="required"/>
+        <input type="text" name="phone" placeholder="Phone Number" pattern="^(\+?6?01)[0-46-9]-*[0-9]{7,8}$"
+               oninvalid="this.setCustomValidity('Invalid MY phone format')" oninput="this.setCustomValidity('')" required="required"/>
+        <input type="email" name="email" placeholder="Email Address" required="required"/>
+        <input type="submit" value="Submit & Learn more">
     </form>
 </body>
 </html>
